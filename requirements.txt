@@ -1,5 +1,0 @@
-streamlit==1.34.0
-scikit-learn==1.4.2        # exemplo — ajuste para a versão correta
-pandas
-numpy
-joblib
