@@ -71,7 +71,7 @@ with abas[0]:
 
     st.title('🩺 Sistema Preditivo para Níveis de Obesidade')
     st.markdown("""
-    [cite_start]Esta ferramenta foi desenvolvida para apoiar a equipe médica no diagnóstico de níveis de obesidade[cite: 15, 19].
+    Esta ferramenta foi desenvolvida para apoiar a equipe médica no diagnóstico de níveis de obesidade[cite: 15, 19].
     Utilizando um modelo de Machine Learning, o sistema analisa as informações do paciente para fornecer uma predição precisa.
     **Instruções:** Preencha os campos abaixo com os dados do paciente e clique em 'Prever' para obter o resultado.
     """)
