@@ -101,9 +101,9 @@ with abas[0]:
     # Escolha e carregamento do modelo
     # ------------------------------------------------------------------
     model_options = {
-        "KNN": "../models/KNN.pkl",
-        "Random Forest": "../models/RandomForest.pkl",
-        "SVM": "../models/SVM.pkl",
+        "KNN": "models/KNN.pkl",
+        "Random Forest": "models/RandomForest.pkl",
+        "SVM": "models/SVM.pkl",
     }
 
     st.sidebar.header("Configuração do Modelo")
