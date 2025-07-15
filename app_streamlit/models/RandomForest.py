@@ -12,7 +12,7 @@ print("Bibliotecas importadas com sucesso.")
 
 # --- 2. Carregamento do Dataset ---
 try:
-    df = pd.read_csv('Obesity.csv')
+    df = pd.read_csv('/data/Obesity.csv')
     print("Dataset 'Obesity.csv' carregado com sucesso.")
 except FileNotFoundError:
     print("Erro: O arquivo 'Obesity.csv' não foi encontrado.")
