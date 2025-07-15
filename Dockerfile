@@ -11,7 +11,8 @@ COPY . .
 EXPOSE 8080
 
 # Use o shell para passar a variável de ambiente PORT ao Streamlit
-CMD streamlit run src/app.py \
+
+CMD streamlit run src/main.py \
     --server.port=${PORT:-8080} \
     --server.address=0.0.0.0 \
     --server.headless=true \
