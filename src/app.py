@@ -3,8 +3,27 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
+import base64
+import pickle
 
-# --- HEADER ---
+# --- CONFIGURAÇÃO DA PÁGINA ---
+# Deve ser o primeiro comando do Streamlit
+st.set_page_config(page_title="Sistema Preditivo de Obesidade", layout="wide")
+
+# --- CARREGAR MODELO ---
+# Carrega o modelo a partir do arquivo .pkl
+@st.cache_resource
+def load_model(model_path):
+    """Carrega o pipeline de machine learning salvo."""
+    return joblib.load(model_path)
+
+# --- FUNÇÕES AUXILIARES ---
+def get_image_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# --- CABEÇALHO ---
 st.markdown(
     """
     <div style='background-color:#0d6efd;padding:16px;border-radius:8px;margin-bottom:16px'>
