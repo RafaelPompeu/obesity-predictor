@@ -79,9 +79,9 @@ with abas[0]:
 
     # --- Escolha do Modelo ---
     model_options = {
-        "KNN": "models/KNN.pkl",
-        "Random Forest": "models/RandomForest.pkl",
-        "SVM": "models/SVM.pkl"
+        "KNN": "/models/KNN.pkl",
+        "Random Forest": "/models/RandomForest.pkl",
+        "SVM": "/models/SVM.pkl"
     }
     st.sidebar.header("Configuração do Modelo")
     selected_model_name = st.sidebar.selectbox("Selecione o modelo de Machine Learning", list(model_options.keys()), index=1)
